@@ -8,9 +8,10 @@ class RESTPUTAPITest {
 
     // REST API PUT call
     static void main(String[] args) {
+        // calling API that updates the student record with id=3
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(new URI("http://localhost:8080/students?Address=Mumbai&Id=3"))
-                .PUT(HttpRequest.BodyPublishers.noBody())
+                .PUT(HttpRequest.BodyPublishers.noBody()) // we are not passing any payload
                 .build();
 
         println("request:" + request);

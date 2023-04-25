@@ -6,8 +6,9 @@ import java.net.http.HttpResponse
 
 class SOAPAPITest {
 
-    // SOAP API POST call
+    // SOAP POST API call
     static void main(String[] args) {
+        // calling API that converts digits in request body to words in API response
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(new URI("https://www.dataaccess.com/webservicesserver/NumberConversion.wso"))
                 .POST(HttpRequest.BodyPublishers.ofString("<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +

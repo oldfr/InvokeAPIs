@@ -8,6 +8,7 @@ class RESTDELETEAPITest {
 
     // REST API DELETE call
     static void main(String[] args) {
+        // calling API that deletes the student record with id=2
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(new URI("http://localhost:8080/students?Id=2"))
                 .DELETE()

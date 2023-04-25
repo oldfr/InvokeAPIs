@@ -8,6 +8,7 @@ class RESTPOSTAPITest {
 
     // SOAP API POST call
     static void main(String[] args) {
+        // calling API that creates a new student record
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(new URI("http://localhost:8080/students"))
                 .POST(HttpRequest.BodyPublishers.ofString("{\n" +
